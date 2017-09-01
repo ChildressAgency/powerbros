@@ -1,15 +1,13 @@
 <?php get_header(); ?>
   <section id="hp-hero">
-    <div class="container">
-      <div class="content-wrapper">
-        <div class="content">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" class="img-responsive center-block" alt="Power Brothers Logo" />
-          <div class="box-note">
-            <p>For A Free Estimate Contact Below or Fill Out Our Contact Form</p>
-          </div>
-          <h2>Site under construction</h2>
-          <p class="phone"><a href="tel:540.272.4424">540.272.4424</a></p>
+    <div class="content-wrapper">
+      <div class="content">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" class="img-responsive center-block" alt="Power Brothers Logo" />
+        <div class="box-note">
+          <p>For A Free Estimate Contact Below or Fill Out Our Contact Form</p>
         </div>
+        <h2>Site under construction</h2>
+        <p class="phone"><a href="tel:540.272.4424">540.272.4424</a></p>
       </div>
     </div>
   </section>
