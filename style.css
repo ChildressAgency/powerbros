@@ -1,0 +1,197 @@
+/*
+  Template Name: Power Brothers Exterior Services
+  Template Author: The Childress Agency
+  Template Author URI: https://childressagency.com
+  Version: 1. 0
+*/
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=c87a2ee6-77d0-43b4-a284-550452663d7c");
+    @font-face{
+        font-family:"Museo Sans W01_n3";
+        src:url("Fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"MuseoSans";
+        src:url("Fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix");
+        src:url("Fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix") format("eot"),url("Fonts/d9896899-f08c-4750-a874-a9e10d83c2cb.woff2") format("woff2"),url("Fonts/d42dd843-62b0-4623-8855-d5882512c3c9.woff") format("woff"),url("Fonts/6d532ccb-086c-4000-bab2-5d16862fcf01.ttf") format("truetype"),url("Fonts/f56b7407-f97b-4cb3-9ce6-4e13065eec93.svg#f56b7407-f97b-4cb3-9ce6-4e13065eec93") format("svg");
+font-weight: 300;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Museo Sans W01_n4";
+        src:url("Fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"MuseoSans";
+        src:url("Fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix");
+        src:url("Fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix") format("eot"),url("Fonts/e2d37f34-6bca-473c-b64d-93811f4dc046.woff2") format("woff2"),url("Fonts/eadbb595-a394-48fc-834f-8bf5da15cddf.woff") format("woff"),url("Fonts/9bcba093-b507-4b9b-9c83-303003d3815c.ttf") format("truetype"),url("Fonts/9a2af429-2624-4bd1-a676-8f0eed3e7e31.svg#9a2af429-2624-4bd1-a676-8f0eed3e7e31") format("svg");
+font-weight: 400;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Museo Sans W01_n5";
+        src:url("Fonts/7e90c1ee-e4b1-46f0-9134-93a8ba421545.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"MuseoSans";
+        src:url("Fonts/7e90c1ee-e4b1-46f0-9134-93a8ba421545.eot?#iefix");
+        src:url("Fonts/7e90c1ee-e4b1-46f0-9134-93a8ba421545.eot?#iefix") format("eot"),url("Fonts/009ca58d-46af-4651-a359-f0ae2301085b.woff2") format("woff2"),url("Fonts/3619b5f4-8df9-44f5-8c53-b7c236e9c74e.woff") format("woff"),url("Fonts/9b2d949a-4e1c-435c-8412-f377c80583ae.ttf") format("truetype"),url("Fonts/7a319e11-05eb-49ce-bdb7-f692766e6477.svg#7a319e11-05eb-49ce-bdb7-f692766e6477") format("svg");
+font-weight: 500;
+font-style: normal;
+    }
+
+body{
+  font-family:MuseoSans, Sans-serif;
+}
+
+#hp-hero{
+  background-image:url(images/power-wash-deck.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.content-wrapper{
+  display:table;
+  height:100%;
+  min-height:785px;
+  max-width:650px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:15px;
+  padding-right:15px;
+}
+.content-wrapper>.content{
+  display:table-cell;
+  vertical-align:middle;
+}
+.box-note{
+  max-width:450px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:25px;
+  text-align:center;
+  background-color:#95c658;
+  padding:15px 5px;
+  border-radius:10px;
+  box-shadow:2px 2px 10px #000;
+}
+.box-note>p{
+  color:#115741;
+  font-size:26px;
+  font-weight:400;
+  line-height:1em;
+  margin-bottom:0;
+}
+#hp-hero h2{
+  font-size:40px;
+  font-weight:400;
+  color:#fff;
+  text-transform:uppercase;
+  text-align:center;
+  text-shadow:2px 2px 5px #000;
+}
+.phone{
+  text-align:center;
+  margin-top:25px;
+}
+.phone>a{
+  color:#fff;
+  font-size:64px;
+  font-weight:500;
+  text-shadow:2px 2px 10px #000;
+}
+.phone>a:hover,
+.phone>a:focus{
+  color:#fff;
+  text-decoration:underline;
+}
+
+#contactInfo{
+  background-color:#b2c8e7;
+  text-align:center;
+  padding-top:25px;
+  padding-bottom:25px;
+  box-shadow:0px 4px 10px -2px #000
+}
+#contactInfo>.container{
+  max-width:600px;
+}
+.contact-icon-link{
+  color:#0e1e34;
+  position:relative;
+  padding-top:60px;
+  display:block;
+}
+.contact-icon-link:hover,
+.contact-icon-link:focus{
+  color:#0e1e34;
+  text-decoration:underline;
+}
+.contact-icon-link:after{
+  content:"";
+  height:50px;
+  width:50px;
+  position:absolute;
+  top:0;
+  background-repeat:no-repeat;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+.contact-icon-link.email-icon:after{
+  background-image:url(images/email-icon.png);
+}
+.contact-icon-link.phone-icon:after{
+  background-image:url(images/phone-icon.png);
+}
+.contact-icon-link.map-icon:after{
+  background-image:url(images/marker-icon.png);
+}
+
+#requestQuote{
+  background-color:#e1e3df;
+  padding-top:100px;
+  padding-bottom:60px;
+}
+#requestQuote h1{
+  font-size:24px;
+  text-transform:uppercase;
+}
+#requestQuote h3{
+  font-size:16px;
+  text-transform:uppercase;
+}
+
+.form-control{
+  color:#115741;
+  border-radius:6px;
+  border-width:2px;
+}
+.control-label{
+  font-weight:300;
+}
+
+.btn-main{
+  background-color:#95c658;
+  color:#115741;
+  border:none;
+  padding:2px 40px;
+  font-weight:300;
+  float:right;
+}
+
+.copyright{
+  margin-top:40px;
+}
+.copyright>p{
+  margin-bottom:0px;
+  text-align:center;
+  font-weight:300;
+}
+.copyright a{
+  color:#333;
+}
+.copyright a:hover,
+.copyright a:focus{
+  color:#333;
+  text-decoration:underline;
+}

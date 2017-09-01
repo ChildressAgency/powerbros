@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Webfonts Demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+	    body, textarea { font-family:Arial, Sans-Serif; line-height:1.6em; font-size:13px; }
+	    h1 { font-size:3em; }
+	    h2, h3 { color:#999; }
+	    .content { width:780px; margin: 20px auto 40px; }
+	    .demo { font-weight:bold; font-style:normal; color: #999 }
+	    .fontdisplay {font-size:2em;line-height:150%;margin: 10px 40px 0px 0px;}
+	    .guidelines { color:#333; }
+	    pre { padding:0 0 0 20px; }
+	    hr { border:0; border-bottom:1px solid #537094; margin:20px 0; }
+	    .link { color: #537094;text-decoration:none; font-weight:bold;}
+	    .uc {text-transform:uppercase}
+	    #para1{font-family:"Museo Sans W01_n3";}
+#para2{font-family:"Museo Sans W01_n4";}
+#para3{font-family:"Museo Sans W01_n5";}
+
+@media all and (min-width: 0px) {
+#para1{font-family:'Museo Sans W01'; font-weight: 300; font-style: normal;}
+#para2{font-family:'Museo Sans W01'; font-weight: 400; font-style: normal;}
+#para3{font-family:'Museo Sans W01'; font-weight: 500; font-style: normal;}
+
+}
+    </style>
+    <style type="text/css">
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=c87a2ee6-77d0-43b4-a284-550452663d7c");
+    @font-face{
+        font-family:"Museo Sans W01_n3";
+        src:url("Fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Museo Sans W01";
+        src:url("Fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix");
+        src:url("Fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix") format("eot"),url("Fonts/d9896899-f08c-4750-a874-a9e10d83c2cb.woff2") format("woff2"),url("Fonts/d42dd843-62b0-4623-8855-d5882512c3c9.woff") format("woff"),url("Fonts/6d532ccb-086c-4000-bab2-5d16862fcf01.ttf") format("truetype"),url("Fonts/f56b7407-f97b-4cb3-9ce6-4e13065eec93.svg#f56b7407-f97b-4cb3-9ce6-4e13065eec93") format("svg");
+font-weight: 300;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Museo Sans W01_n4";
+        src:url("Fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Museo Sans W01";
+        src:url("Fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix");
+        src:url("Fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix") format("eot"),url("Fonts/e2d37f34-6bca-473c-b64d-93811f4dc046.woff2") format("woff2"),url("Fonts/eadbb595-a394-48fc-834f-8bf5da15cddf.woff") format("woff"),url("Fonts/9bcba093-b507-4b9b-9c83-303003d3815c.ttf") format("truetype"),url("Fonts/9a2af429-2624-4bd1-a676-8f0eed3e7e31.svg#9a2af429-2624-4bd1-a676-8f0eed3e7e31") format("svg");
+font-weight: 400;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Museo Sans W01_n5";
+        src:url("Fonts/7e90c1ee-e4b1-46f0-9134-93a8ba421545.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Museo Sans W01";
+        src:url("Fonts/7e90c1ee-e4b1-46f0-9134-93a8ba421545.eot?#iefix");
+        src:url("Fonts/7e90c1ee-e4b1-46f0-9134-93a8ba421545.eot?#iefix") format("eot"),url("Fonts/009ca58d-46af-4651-a359-f0ae2301085b.woff2") format("woff2"),url("Fonts/3619b5f4-8df9-44f5-8c53-b7c236e9c74e.woff") format("woff"),url("Fonts/9b2d949a-4e1c-435c-8412-f377c80583ae.ttf") format("truetype"),url("Fonts/7a319e11-05eb-49ce-bdb7-f692766e6477.svg#7a319e11-05eb-49ce-bdb7-f692766e6477") format("svg");
+font-weight: 500;
+font-style: normal;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1 class="demo">Fonts.com Web fonts</h1>
+        <p style="margin-top:-10px; font-size:1.5em;color:#666"><b>@font-face implementation instructions</b></p>
+        <hr />
+        <p class="uc">The fonts contained in this kit are:</p>
+        <div class="fontdisplay">
+<div id="para1"> Museo™ Sans W01 500 </div>
+<div id="para2"> Museo™ Sans W01 700 </div>
+<div id="para3"> Museo™ Sans W01 900 </div>
+
+        </div>
+        <hr />
+        Click here for <a class="link uc" href="demo-async.htm">asynchronous</a> web fonts implementation
+        <hr />
+        <div class="guidelines">
+            <h2>CSS Implementation Guidelines</h2>
+            <p>You and any third party web font hosting service are responsible for ensuring that the font software in the self-hosting kit, in its original format, can only be used on the Web Sites for which the self-hosting kit was downloaded and cannot be used or referenced by any other web site. This includes, but is not limited to installing adequate technical protection measures that restrict the use and/or access to the font software, for instance by utilizing JavaScript or access control mechanism for cross-origin resource sharing and protecting against use on web sites other than the Web Sites for which the self-hosting kit was downloaded by restricting domain access only to such Web Sites. You must also retain the pageview tracking code on any Web Site that you self-host. In the event this Agreement terminates for any reason, the font software included with the self-hosting kit must be deleted from the server and all copies must be destroyed or returned to Monotype Imaging.</p>
+            <p>View <a class="link" href="http://www.fonts.com/info/legal/eula/web-fonts" target="_blank">"WEB FONT SOFTWARE" LICENSE AGREEMENT</a></p>
+            <p>Font file names have been obfuscated to protect the font software. You can identify font format based on file ending:</p>
+            <ul>
+                <li>1 - TrueType (ttf)</li>
+                <li>2 - Embedded OpenType (eot)</li>
+                <li>3 - Web Open Font Format (woff)</li>
+                <li>4 - Web Open Font Format version 2 (woff2)</li>
+                <li>5 - Scalable Vector Graphics (svg)</li>
+            </ul>
+            <p class="uc" style="margin: 20px 0px -20px;"><b>Copy and paste following code in head section of the page</b></p>
+            <hr />
+            <textarea style="width:830px; height:350px; border:1 #fff solid; background-color:#fcfcfc;"><style type="text/css">
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=c87a2ee6-77d0-43b4-a284-550452663d7c");
+    @font-face{
+        font-family:"Museo Sans W01_n3";
+        src:url("Fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Museo Sans W01";
+        src:url("Fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix");
+        src:url("Fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix") format("eot"),url("Fonts/d9896899-f08c-4750-a874-a9e10d83c2cb.woff2") format("woff2"),url("Fonts/d42dd843-62b0-4623-8855-d5882512c3c9.woff") format("woff"),url("Fonts/6d532ccb-086c-4000-bab2-5d16862fcf01.ttf") format("truetype"),url("Fonts/f56b7407-f97b-4cb3-9ce6-4e13065eec93.svg#f56b7407-f97b-4cb3-9ce6-4e13065eec93") format("svg");
+font-weight: 300;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Museo Sans W01_n4";
+        src:url("Fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Museo Sans W01";
+        src:url("Fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix");
+        src:url("Fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix") format("eot"),url("Fonts/e2d37f34-6bca-473c-b64d-93811f4dc046.woff2") format("woff2"),url("Fonts/eadbb595-a394-48fc-834f-8bf5da15cddf.woff") format("woff"),url("Fonts/9bcba093-b507-4b9b-9c83-303003d3815c.ttf") format("truetype"),url("Fonts/9a2af429-2624-4bd1-a676-8f0eed3e7e31.svg#9a2af429-2624-4bd1-a676-8f0eed3e7e31") format("svg");
+font-weight: 400;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Museo Sans W01_n5";
+        src:url("Fonts/7e90c1ee-e4b1-46f0-9134-93a8ba421545.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Museo Sans W01";
+        src:url("Fonts/7e90c1ee-e4b1-46f0-9134-93a8ba421545.eot?#iefix");
+        src:url("Fonts/7e90c1ee-e4b1-46f0-9134-93a8ba421545.eot?#iefix") format("eot"),url("Fonts/009ca58d-46af-4651-a359-f0ae2301085b.woff2") format("woff2"),url("Fonts/3619b5f4-8df9-44f5-8c53-b7c236e9c74e.woff") format("woff"),url("Fonts/9b2d949a-4e1c-435c-8412-f377c80583ae.ttf") format("truetype"),url("Fonts/7a319e11-05eb-49ce-bdb7-f692766e6477.svg#7a319e11-05eb-49ce-bdb7-f692766e6477") format("svg");
+font-weight: 500;
+font-style: normal;
+    }
+
+</style>
+
+</textarea>
+            <h3>Licensing information should be included within the CSS</h3>
+<pre>/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://www.fonts.com
+*/</pre>
+        </div>
+    </div>
+</body>
+</html>
