@@ -43,6 +43,11 @@ body{
   font-family:MuseoSans, Sans-serif;
 }
 
+a{
+  -webkit-transition:all .3s ease;
+  transition:all .3s ease;
+}
+
 #header-nav{
   background-color:#0e1c35;
 }
@@ -53,13 +58,69 @@ body{
   float:right;
   font-size:16px;
 }
-#header-nav .contact-info>.phone{
+.header-phone{
   color:#fff;
   letter-spacing:2px;
+  padding:13px 15px;
+  display:inline-block;
 }
-#header-nav .contact-info>.estimate{
+.header-phone:hover,
+.header-phone:focus{
+  text-decoration:none;
+  color:#b2c8e7;
+}
+.header-estimate{
   background-color:#b2c8e7;
+  color:#1c1b1a;
+  height:50px;
+  display:inline-block;
+  margin-right:-15px;
+  padding:13px 15px;
 }
+.header-estimate:hover,
+.header-estimate:focus{
+  background-color:#0e1c35;
+  color:#b2c8e7;
+  text-decoration:none;
+}
+.header-logo>img{
+  margin-top:8px;
+}
+
+.navbar-nav>li>a{
+  color:#fff;
+  text-transform:uppercase;
+}
+.navbar-nav>li.active>a,
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus{
+  color:#b2c8e7;
+  background-color:transparent;
+}
+
+#header-nav .social{
+  margin-top:13px;
+}
+#header-nav .social>a{
+  display:inline-block;
+  color:#b2c8e7;
+  font-size:18px;
+}
+#header-nav .social>a:hover,
+#header-nav .social>a:focus{
+  color:#fff;
+  text-decoration:none;
+}
+#header-nav .social>a+a{
+  margin-left:10px;
+}
+.navbar-toggle{
+  border-color:#fff;
+}
+.navbar-toggle .icon-bar{
+  background-color:#fff;
+}
+
 
 #hp-hero{
   background-image:url(images/power-wash-deck.jpg);
@@ -213,6 +274,23 @@ body{
 }
 
 @media (max-width:767px){
+  #header-nav .social{
+    margin-left:15px;
+    float:none;
+  }
+  #header-nav .contact-info{
+    float:none;
+  }
+  .header-phone{
+    display:block;
+  }
+  .header-estimate{
+    display:block;
+    margin-right:0;
+  }
+  .header-logo>img{
+    margin-left:15px;
+  }
   .box-note>p{
     font-size:18px;
   }
@@ -234,5 +312,11 @@ body{
     max-width:600px;
     margin-left:auto;
     margin-right:auto;
+  }
+}
+@media (min-width:768px) and (max-width:1199px){
+  .navbar-header,
+  .menu-container{
+    margin-top:50px;
   }
 }
