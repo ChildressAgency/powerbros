@@ -92,6 +92,8 @@ img.alignright{
 
 #header-nav{
   background-color:#0e1c35;
+  position:relative;
+  z-index:4;
 }
 #header-nav.homepage{
   background-color:rgba(0,0,0,.5);
@@ -482,7 +484,7 @@ img.alignright{
   position:relative;
   z-index:3;
 }
-#main>.container{
+.container.narrow{
   max-width:500px;
   margin-left:auto;
   margin-right:auto;
@@ -524,6 +526,106 @@ article h2{
   max-width:500px;
   margin-left:auto;
   margin-right:auto;
+}
+
+.contact-bubble{
+  background-color:#0e1c35;
+  padding:20px;
+  max-width:300px;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:0px 16px 16px 16px;
+  margin-top:40px;
+}
+.contact-bubble p>a{
+  padding-left:30px;
+  position:relative;
+  display:inline-block;
+  color:#fff;
+  font-weight:300;
+}
+.contact-bubble p>a:before{
+  content:"";
+  position:absolute;
+  width:22px;
+  height:22px;
+  background-image:url(images/sprites.png);
+  left:-5px;
+}
+.mail-icon-small:before{
+  background-position:-25px -56px;
+  top:3px;
+}
+.phone-icon-small:before{
+  background-position:0px -54px;
+}
+.map-icon-small:before{
+  background-position:-48px -51px;
+}
+img.credit-cards{
+  margin-top:40px;
+}
+.social.social-btns{
+  margin-top:40px;
+  max-width:300px;
+  margin-left:auto;
+  margin-right:auto;
+}
+#main .contact-form{
+  margin-top:40px;
+}
+.btn-alt{
+  color:#fff;
+  background-color:#666;
+  padding:3px 6px;
+  width:120px;
+  display:inline-block;
+  margin-top:10px;
+  border-radius:4px;
+}
+.btn-alt>.fa{
+  margin-right:5px;
+}
+.btn-alt:hover,
+.btn-alt:focus{
+  color:#fff;
+  text-decoration:none;
+  opacity:.6;
+}
+#main .contact-form{
+  max-width:325px;
+  margin-left:auto;
+  margin-right:auto;
+}
+#estimatesPhone{
+  background-image:url(images/weed-whacker.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
+  padding-top:60px;
+  padding-bottom:80px;
+  text-align:center;
+}
+#estimatesPhone h1{
+  font-size:60px;
+  color:#b2c8e7;
+  text-shadow:3px 3px 10px #000;
+  margin-top:0;
+  margin-bottom:0;
+}
+#estimatesPhone h2{
+  margin-top:0;
+  margin-bottom:0;
+}
+#estimatesPhone h2>a{
+  font-size:72px;
+  color:#e1e3df;
+  text-shadow:3px 3px 10px #000;
+}
+#estimatesPhone h2>a:hover,
+#estimatesPhone h2>a:focus{
+  color:#e1e3df;
+  text-decoration:none;
 }
 
 footer{
@@ -617,6 +719,12 @@ footer .social>a+a{
     margin-top:25px;
     text-align:center;
     border-left:none;
+  }
+  #estimatesPhone h2>a{
+    font-size:43px;
+  }
+  #estimatesPhone h1{
+    font-size:46px;
   }
 }
 @media (min-width:768px){
