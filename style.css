@@ -684,6 +684,9 @@ footer .social>a+a{
   color:#333;
   text-decoration:underline;
 }
+.grid-item{
+  margin-top:25px;
+}
 
 @media (max-width:767px){
   #header-nav .social{

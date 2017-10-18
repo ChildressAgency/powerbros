@@ -77,6 +77,10 @@ jQuery(document).ready(function($){
     $container.isotope({ filter: comboFilter });
   });
 
+  $container.isotope('on', 'layoutComplete', function(a,b){
+    $('.grid').css('height', '100% !important');
+  });
+
   function getComboFilter(){
     var combo = [];
     for (var prop in filters) {
