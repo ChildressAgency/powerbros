@@ -687,6 +687,18 @@ footer .social>a+a{
 .grid-item{
   margin-top:25px;
 }
+.option-set label{
+  font-weight:300;
+}
+.option-set.parents{
+  text-transform:uppercase;
+}
+.option-set input[type="checkbox"]{
+  visibility:hidden;
+}
+.option-set input[type="checkbox"]:checked + label{
+  font-weight:500;
+}
 
 @media (max-width:767px){
   #header-nav .social{
@@ -729,6 +741,9 @@ footer .social>a+a{
   #estimatesPhone h1{
     font-size:46px;
   }
+  .option-set label{
+    margin-left:15px;
+  }
 }
 @media (min-width:768px){
   .navbar-header{
@@ -759,6 +774,9 @@ footer .social>a+a{
   #contact .container-fluid.container-sm-height{
     width:100%;
     margin-left:-15px;
+  }
+  .option-set label{
+    display:block;
   }
 }
 @media (min-width:768px) and (max-width:1199px){
