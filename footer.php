@@ -1,9 +1,18 @@
-  <?php get_template_part('partials/testimonials', 'section'); ?>
-  <section id="contact">
-    <div class="container">
-      <?php echo do_shortcode('[contact-form]'); ?>
-    </div>
-  </section>
+<?php //testimonials section
+  if(!is_page('contact-us')){
+    get_template_part('partials/testimonials', 'section');
+  }
+?>
+
+<?php //contact form section
+  if(!is_page('contact-us')): ?>
+    <section id="contact">
+      <div class="container">
+        <?php echo do_shortcode('[contact-form]'); ?>
+      </div>
+    </section>
+<?php endif; ?>
+
   <footer>
     <div class="container-fluid container-sm-height">
       <div class="row row-sm-height">
