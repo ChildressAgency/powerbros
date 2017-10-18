@@ -41,4 +41,67 @@ jQuery(document).ready(function($){
       $(this).carousel('next');
     });
   }
+
+  // our work page gallery
+  // using isotope jquery library
+  // https://isotope.metafizzy.co/
+  var filters = {};
+  var $container = $('.grid');
+  $container.isotope({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    masonry: {
+      columnWidth: '.grid-sizer'
+    }
+  });
+  $('#filters').on('change', function(event){
+    var checkbox = event.target;
+    var $checkbox = $(checkbox);
+    var group = $checkbox.parents('.option-set').attr('data-group');
+    var filterGroup = filters[group];
+
+    if(!filterGroup){
+      filterGroup = filters[group] = [];
+    }
+
+    if(checkbox.checked){
+      filterGroup.push(checkbox.value);
+    }
+    else{
+      var index = filterGroup.indexOf(checkbox.value);
+      filterGroup.splice(index, 1);
+    }
+
+    var comboFilter = getComboFilter();
+    //console.log(filterGroup);
+    $container.isotope({ filter: comboFilter });
+  });
+
+  function getComboFilter(){
+    var combo = [];
+    for (var prop in filters) {
+      var group = filters[prop];
+      if (!group.length) {
+        // no filters in group, carry on
+        continue;
+      }
+      // add first group
+      if (!combo.length) {
+        combo = group.slice(0);
+        continue;
+      }
+      // add additional groups
+      var nextCombo = [];
+      // split group into combo: [ A, B ] & [ 1, 2 ] => [ A1, A2, B1, B2 ]
+      for (var i = 0; i < combo.length; i++) {
+        for (var j = 0; j < group.length; j++) {
+          var item = combo[i] + group[j];
+          nextCombo.push(item);
+        }
+      }
+      combo = nextCombo;
+    }
+    var comboFilter = combo.join(', ');
+    return comboFilter;    
+  }
 });
