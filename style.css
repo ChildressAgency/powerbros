@@ -489,6 +489,9 @@ img.alignright{
   margin-left:auto;
   margin-right:auto;
 }
+.container.services{
+  max-width:600px;
+}
 .page-title{
   font-size:32px;
   text-align:center;
@@ -706,6 +709,27 @@ footer .social>a+a{
 .gallery #fullSizeImage{
   margin-top:5px;
 }
+
+.service-card{
+  max-width:190px;
+  margin-left:auto;
+  margin-right:auto;
+  box-shadow:3px 3px 10px #000;
+  margin-top:40px;
+}
+.service-card h2{
+  font-size:16px;
+  margin-top:0px;
+  margin-bottom:5px;
+}
+.service-card p{
+  line-height:1em;
+}
+.card-footer{
+  background-color:#b2c8e7;
+  padding:10px;
+}
+
 
 @media (max-width:767px){
   #header-nav .social{
