@@ -19,7 +19,8 @@
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/jquery.mobile.min.js"></script>
+  <!--<script type="text/javascript" src="js/jquery.mobile.min.js"></script>-->
+  <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
   <script type="text/javascript" src="js/powerbros-scripts.js"></script>
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -82,59 +83,84 @@
       <div class="row">
         <div class="col-sm-2">
           <div id="filters">
-            <div class="option-set">
-              <button class="non-btn" data-filter=".residential">Residential</button>
-              <button class="non-btn" data-filter=".commercial">Commercial</button>
-              <button class="non-btn active" data-filter="">All</button>
+            <div class="option-set" >
+              <button class="non-btn parent-cat" data-filter=".residential">Residential</button>
+              <button class="non-btn parent-cat" data-filter=".commercial">Commercial</button>
+              <button class="non-btn parent-cat active" data-filter="">All</button>
             </div>
             <div class="option-set">
-              <button class="non-btn active" data-filter=".pressure-washing">Pressure Washing</button>
-              <button class="non-btn" data-filter=".landscaping">Landscaping</button>
-              <button class="non-btn" data-filter=".mulching">Mulching</button>
-              <button class="non-btn" data-filter=".home-repair">Home Repair</button>
-              <button class="non-btn" data-filter=".staining-painting">Staining / Painting</button>
-              <button class="non-btn" data-filter="brush-removal">Brush Removal</button>
-              <button class="non-btn" data-filter="mowing">Mowing</button>
+              <button class="non-btn child-cat active" data-filter=".pressure-washing">Pressure Washing</button>
+              <button class="non-btn child-cat" data-filter=".landscaping">Landscaping</button>
+              <button class="non-btn child-cat" data-filter=".mulching">Mulching</button>
+              <button class="non-btn child-cat" data-filter=".home-repair">Home Repair</button>
+              <button class="non-btn child-cat" data-filter=".staining-painting">Staining / Painting</button>
+              <button class="non-btn child-cat" data-filter="brush-removal">Brush Removal</button>
+              <button class="non-btn child-cat" data-filter="mowing">Mowing</button>
             </div>
           </div>
         </div>
         <div class="col-sm-10">
           <div class="grid">
-            <div class="gallery-item commercial mowing">
-              <img src="images/gallery1.jpg" class="img-responsive center-block" alt="" />
+            <div class="grid-sizer col-xs-6 col-sm-4"></div>
+            <div class="grid-item col-xs-6 col-sm-4">
+              <div class="gallery-item commercial mowing">
+                <img src="images/gallery1.jpg" class="img-responsive center-block" alt="" />
+              </div>
             </div>
-            <div class="gallery-item residential mowing">
-              <img src="images/gallery2.jpg" class="img-responsive center-block" alt="" />
+            <div class="grid-item col-xs-6 col-sm-4">
+              <div class="gallery-item residential mowing">
+                <img src="images/gallery2.jpg" class="img-responsive center-block" alt="" />
+              </div>
             </div>
-            <div class="gallery-item residential landscaping">
-              <img src="images/gallery3.jpg" class="img-responsive center-block" alt="" />
+            <div class="grid-item col-xs-6 col-sm-4">
+              <div class="gallery-item residential landscaping">
+               <img src="images/gallery3.jpg" class="img-responsive center-block" alt="" />
+              </div>
             </div>
-            <div class="gallery-item commercial landscaping">
-              <img src="images/gallery4.jpg" class="img-responsive center-block" alt="" />
+            <div class="grid-item col-xs-6 col-sm-4">
+              <div class="gallery-item commercial landscaping">
+                <img src="images/gallery4.jpg" class="img-responsive center-block" alt="" />
+              </div>
             </div>
-            <div class="gallery-item residential pressure-washing">
-              <img src="images/gallery5.jpg" class="img-responsive center-block" alt="" />
+            <div class="grid-item col-xs-6 col-sm-4">
+              <div class="gallery-item residential pressure-washing">
+                <img src="images/gallery5.jpg" class="img-responsive center-block" alt="" />
+              </div>
             </div>
-            <div class="gallery-item residential brush-removal">
-              <img src="images/gallery6.jpg" class="img-responsive center-block" alt="" />
+            <div class="grid-item col-xs-6 col-sm-4">
+              <div class="gallery-item residential brush-removal">
+                <img src="images/gallery6.jpg" class="img-responsive center-block" alt="" />
+              </div>
             </div>
-            <div class="gallery-item commercial landscaping">
-              <img src="images/gallery7.jpg" class="img-responsive center-block" alt="" />
+            <div class="grid-item col-xs-6 col-sm-4">
+              <div class="gallery-item commercial landscaping">
+                <img src="images/gallery7.jpg" class="img-responsive center-block" alt="" />
+              </div>
             </div>
-            <div class="gallery-item commercial staining-painting">
-              <img src="images/gallery8.jpg" class="img-responsive center-block" alt="" />
+            <div class="grid-item col-xs-6 col-sm-4">
+              <div class="gallery-item commercial staining-painting">
+                <img src="images/gallery8.jpg" class="img-responsive center-block" alt="" />
+              </div>
             </div>
-            <div class="gallery-item residential mowing">
-              <img src="images/gallery9.jpg" class="img-responsive center-block" alt="" />
+            <div class="grid-item col-xs-6 col-sm-4">
+              <div class="gallery-item residential mowing">
+                <img src="images/gallery9.jpg" class="img-responsive center-block" alt="" />
+              </div>
             </div>
-            <div class="gallery-item commercial landscaping">
-              <img src="images/gallery10.jpg" class="img-responsive center-block" alt="" />
+            <div class="grid-item col-xs-6 col-sm-4">
+              <div class="gallery-item commercial landscaping">
+                <img src="images/gallery10.jpg" class="img-responsive center-block" alt="" />
+              </div>
             </div>
-            <div class="gallery-item residential mulching">
-              <img src="images/gallery11.jpg" class="img-responsive center-block" alt="" />
+            <div class="grid-item col-xs-6 col-sm-4">
+              <div class="gallery-item residential mulching">
+                <img src="images/gallery11.jpg" class="img-responsive center-block" alt="" />
+              </div>
             </div>
-            <div class="gallery-item residential pressure-washing">
-              <img src="images/gallery12.jpg" class="img-responsive center-block" alt="" />
+            <div class="grid-item col-xs-6 col-sm-4">
+              <div class="gallery-item residential pressure-washing">
+                <img src="images/gallery12.jpg" class="img-responsive center-block" alt="" />
+              </div>
             </div>
           </div>
         </div>
