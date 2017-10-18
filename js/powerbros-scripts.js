@@ -42,44 +42,58 @@ jQuery(document).ready(function($){
     });
   }
 
+  // homepage gallery
+  $('.thumb').on('click', function(e){
+    e.preventDefault();
+    var full_size = $(this).attr('data-full_size');
+    $('#fullSizeImage').fadeOut('fast', function(){
+      $(this).load(function(){
+        $(this).fadeIn('fast');
+      });
+      $(this).attr('src', full_size);
+    });
+  });
+
   // our work page gallery
   // using isotope jquery library
   // https://isotope.metafizzy.co/
-  var filters = {};
-  var $container = $('.grid');
-  $container.isotope({
-    itemSelector: '.grid-item',
-    percentPosition: true,
-    masonry: {
-      columnWidth: '.grid-sizer'
-    }
-  });
-  $('#filters').on('change', function(event){
-    var checkbox = event.target;
-    var $checkbox = $(checkbox);
-    var group = $checkbox.parents('.option-set').attr('data-group');
-    var filterGroup = filters[group];
+  if(typeof $.fn.isotope == 'function'){
+    var filters = {};
+    var $container = $('.grid');
+    $container.isotope({
+      itemSelector: '.grid-item',
+      percentPosition: true,
+      masonry: {
+        columnWidth: '.grid-sizer'
+      }
+    });
+    $('#filters').on('change', function(event){
+      var checkbox = event.target;
+      var $checkbox = $(checkbox);
+      var group = $checkbox.parents('.option-set').attr('data-group');
+      var filterGroup = filters[group];
 
-    if(!filterGroup){
-      filterGroup = filters[group] = [];
-    }
+      if(!filterGroup){
+        filterGroup = filters[group] = [];
+      }
 
-    if(checkbox.checked){
-      filterGroup.push(checkbox.value);
-    }
-    else{
-      var index = filterGroup.indexOf(checkbox.value);
-      filterGroup.splice(index, 1);
-    }
+      if(checkbox.checked){
+        filterGroup.push(checkbox.value);
+      }
+      else{
+        var index = filterGroup.indexOf(checkbox.value);
+        filterGroup.splice(index, 1);
+      }
 
-    var comboFilter = getComboFilter();
-    //console.log(filterGroup);
-    $container.isotope({ filter: comboFilter });
-  });
+      var comboFilter = getComboFilter();
+      //console.log(filterGroup);
+      $container.isotope({ filter: comboFilter });
+    });
 
-  $container.isotope('on', 'layoutComplete', function(a,b){
-    $('.grid').css('height', '100% !important');
-  });
+    $container.isotope('on', 'layoutComplete', function(a,b){
+      $('.grid').css('height', '100% !important');
+    });
+  }
 
   function getComboFilter(){
     var combo = [];

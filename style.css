@@ -699,6 +699,13 @@ footer .social>a+a{
 .option-set input[type="checkbox"]:checked + label{
   font-weight:500;
 }
+.gallery .thumb{
+  display:block;
+  margin-top:5px;
+}
+.gallery #fullSizeImage{
+  margin-top:5px;
+}
 
 @media (max-width:767px){
   #header-nav .social{
