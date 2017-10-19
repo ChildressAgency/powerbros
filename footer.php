@@ -4,13 +4,29 @@
   }
 ?>
 
-<?php //contact form section
-  if(!is_page('contact-us')): ?>
-    <section id="contact">
+<?php //homepage social section
+  if(is_front_page()){
+    get_template_part('partials/hp_social', 'section');
+  }
+?>
+
+<?php if(!is_page('contact-us')): ?>
+  <section id="contact">
+    <?php if(is_front_page()): ?>
+      <div class="container-fluid container-sm-height">
+        <div class="row row-sm-height">
+          <div class="col-sm-6 col-sm-height image-side"></div>
+          <div class="col-sm-6 col-sm-height">
+            <?php echo do_shortcode('[contact-form]'); ?>
+          </div>
+        </div>
+      </div>
+    <?php else: ?>
       <div class="container">
         <?php echo do_shortcode('[contact-form]'); ?>
       </div>
-    </section>
+    <?php endif; ?>
+  </section>
 <?php endif; ?>
 
   <footer>
