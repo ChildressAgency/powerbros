@@ -1,5 +1,5 @@
 <?php if(have_rows('testimonials', 'option')): ?>
-<section id="testimonials">
+<section id="testimonials"<?php if(is_page('our-work')){ echo ' style="background-image:none; background-color:#e1e3df; box-shadow:0px 3px 10px #000; position:relative;"'; } ?>>
   <div class="container">
     <div class="content-square">
       <div id="testimonial-slider" class="carousel slide" data-ride="carousel">
