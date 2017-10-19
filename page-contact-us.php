@@ -32,7 +32,7 @@
           </div>
         </div>
         <div class="col-sm-6">
-          <?php echo do_shortcode('[contact-form]'); ?>
+          <?php echo do_shortcode('[contact-form-7 id="16" title="Contact form 1"]'); ?>
         </div>
       </div>
     </div>

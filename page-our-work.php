@@ -60,7 +60,7 @@
   <section id="estimatesPhone" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/images/hedge-trimmer.jpg);">
     <div class="container">
       <h1>Free Estimates</h1>
-      <h2><a href="tel:<?php the_field('phone_number', 'option';); ?>"><?php the_field(phone_number'); ?></a></h2>
+      <h2><a href="tel:<?php the_field('phone_number', 'option';); ?>"><?php the_field('phone_number', 'option'); ?></a></h2>
     </div>
   </section>
 <?php get_footer(); ?>

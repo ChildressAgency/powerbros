@@ -17,13 +17,13 @@
         <div class="row row-sm-height">
           <div class="col-sm-6 col-sm-height image-side"></div>
           <div class="col-sm-6 col-sm-height">
-            <?php echo do_shortcode('[contact-form]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="16" title="Contact form 1"]'); ?>
           </div>
         </div>
       </div>
     <?php else: ?>
       <div class="container">
-        <?php echo do_shortcode('[contact-form]'); ?>
+        <?php echo do_shortcode('[contact-form-7 id="16" title="Contact form 1"]'); ?>
       </div>
     <?php endif; ?>
   </section>
