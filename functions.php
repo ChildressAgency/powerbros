@@ -328,10 +328,10 @@ function powerbros_load_categories($field){
   $field['choices'] = array();
 
   if(have_rows('our_work_gallery_categories', 'option')){
-    while(have_rows('our_work_gallery_categories')){
+    while(have_rows('our_work_gallery_categories', 'option')){
       the_row();
-      $value = get_sub_field('value');
-      $label = get_sub_field('label');
+      $label = get_sub_field('gallery_category');
+      $value = sanitize_title(get_sub_field('gallery_category'));
 
       $field['choices'][$value] = $label;
     }
