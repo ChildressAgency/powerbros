@@ -322,3 +322,19 @@ if(function_exists('acf_add_options_page')){
     'redirect' => false
   ));
 }
+
+add_filter('acf/load_field/name=category', 'powerbros_load_categories');
+function powerbros_load_categories($field){
+  $field['choices'] = array();
+
+  if(have_rows('our_work_gallery_categories', 'option')){
+    while(have_rows('our_work_gallery_categories')){
+      the_row();
+      $value = get_sub_field('value');
+      $label = get_sub_field('label');
+
+      $field['choices'][$value] = $label;
+    }
+  }
+  return $field;
+}
