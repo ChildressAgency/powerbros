@@ -497,6 +497,17 @@ img.alignright{
   text-align:center;
   margin-bottom:40px;
 }
+.page-title>a{
+  color:#0e1c35;
+}
+.page-title>a:hover,
+.page-title>a:focus{
+  color:#0e1c35;
+  text-decoration:underline;
+}
+.blog-summary{
+  margin-top:40px;
+}
 article h2{
   font-size:18px;
 }
