@@ -21,13 +21,13 @@
           ?>
           <div class="social social-btns">
             <?php if($facebook): ?>
-              <a href="<?php echo $facebook; ?>" class="btn-alt"><i class="fa fa-facebook-official"></i> Facebook</a>
+              <a href="<?php echo $facebook; ?>" class="btn-alt" target="_blank"><i class="fa fa-facebook-official"></i> Facebook</a>
             <?php endif; if($twitter): ?>
-              <a href="<?php echo $twitter; ?>" class="btn-alt"><i class="fa fa-twitter"></i> Twitter</a>
+              <a href="<?php echo $twitter; ?>" class="btn-alt" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
             <?php endif; if($instagram): ?>
-              <a href="<?php echo $instagram; ?>" class="btn-alt"><i class="fa fa-instagram"></i> Instagram</a>
+              <a href="<?php echo $instagram; ?>" class="btn-alt" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
             <?php endif; if($linkedin): ?>
-              <a href="<?php echo $linkedin; ?>" class="btn-alt"><i class="fa fa-linkedin"></i> LinkedIn</a>
+              <a href="<?php echo $linkedin; ?>" class="btn-alt" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
             <?php endif; ?>
           </div>
         </div>

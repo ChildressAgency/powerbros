@@ -31,7 +31,7 @@
         </div>
       </div>
       <div class="navbar-header">
-        <a href="<?php home_url(); ?>" class="header-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/header-logo-small.png" alt="Power Brothers Logo" /></a>
+        <a href="<?php echo home_url(); ?>" class="header-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/header-logo-small.png" alt="Power Brothers Logo" /></a>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="expanded" aria-control="navbar">
           <span class="sr-only">Toggle Navigation</span>
           <span class="icon-bar"></span>

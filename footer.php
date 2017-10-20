@@ -57,7 +57,7 @@
     </div>
       <div class="copyright">
         <p>&copy;<?php echo date('Y'); ?> Power Brothers Exterior Services</p>
-        <p>website created by <a href="https://childressagency.com">The Childress Agency</a></p>
+        <p>website created by <a href="https://childressagency.com" target="_blank">The Childress Agency</a></p>
       </div>
   </footer>
   <?php wp_footer(); ?>

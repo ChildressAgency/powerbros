@@ -1,11 +1,11 @@
 <?php
-
+/*
 add_action('wp_footer', 'show_template');
 function show_template() {
 	global $template;
 	print_r($template);
 }
-
+*/
 add_action('wp_enqueue_scripts', 'jquery_cdn');
 function jquery_cdn(){
   if(!is_admin()){
@@ -323,7 +323,7 @@ if(function_exists('acf_add_options_page')){
   ));
 }
 
-add_filter('acf/load_field/name=category', 'powerbros_load_categories');
+add_filter('acf/load_field/name=child_category', 'powerbros_load_categories');
 function powerbros_load_categories($field){
   $field['choices'] = array();
 

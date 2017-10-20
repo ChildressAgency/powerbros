@@ -55,7 +55,7 @@
                     foreach($images as $image):
                       if($i%2==0){ echo '<div class="clearfix"></div>'; } ?>
                       <div class="col-xs-6">
-                        <a href="#" class="thumb" data-full_size="<?php echo $image['url']; ?>"><img src="<?php echo $image[sizes]['medium']; ?>" class="img-responsive center-block" alt="thumb" /></a>
+                        <a href="#" class="thumb" data-full_size="<?php echo $image['url']; ?>"><img src="<?php echo $image['sizes']['medium']; ?>" class="img-responsive center-block" alt="thumb" /></a>
                       </div>
                   <?php $i++; endforeach; ?>
                 </div>

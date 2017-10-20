@@ -9,7 +9,7 @@
     <?php endwhile; endif; ?>
     <?php if(have_rows('team_members')): ?>
       <div class="row">
-        <?php $i==0; while(have_rows('team_members')): the_row(); ?>
+        <?php $i=0; while(have_rows('team_members')): the_row(); ?>
           <?php if($i%2==0){ echo '<div class="clearfix"></div>'; } ?>
           <div class="col-sm-6">
             <div class="owner">
