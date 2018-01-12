@@ -10,17 +10,25 @@
   </div>
   <div class="container services">
     <div class="row">
-      <?php if(have_rows('services')): $i=0; while(have_rows('services')): the_row(); ?>
-        <?php if($i%3==0){ echo '<div class="clearfix"></div>'; } ?>
-        <div class="col-sm-4">
-          <div class="service-card">
-            <img src="<?php the_sub_field('service_image'); ?>" class="img-responsive center-block" alt="" />
-            <div class="card-footer">
-              <h2><?php the_sub_field('service_title'); ?></h2>
-              <p><?php the_sub_field('service_text'); ?></p>
+      <?php
+        $services = new WP_Query(array(
+          'post_type' => 'services',
+          'posts_per_page' => -1
+        ));
+
+        if($services->have_posts()): $i=0; while($services->have_posts()): $services->the_post(); ?>
+          <?php if($i%3==0){ echo '<div class="clearfix"></div>'; } ?>
+          <div class="col-sm-4">
+            <div class="service-card">
+              <?php the_post_thumbnail('full', ['class' => 'img-responsive center-block']); ?>
+              <div class="card-footer">
+                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <?php if(get_field('service_short_description')): ?>
+                  <p><?php the_field('service_short_description'); ?></p>
+                <?php endif; ?>
+              </div>
             </div>
           </div>
-        </div>
       <?php $i++; endwhile; endif; ?>
     </div>
   </div>
