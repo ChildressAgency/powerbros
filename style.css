@@ -741,6 +741,18 @@ footer .social>a+a{
   padding:10px;
 }
 
+#services .content-square ul a,
+.service-card .card-footer h2>a{
+  color:#000;
+}
+#services .content-square ul a:hover,
+#services .content-square ul a:focus,
+.service-card .card-footer h2>a:hover,
+.service-card .card-footer h2>a:focus{
+  color:#000;
+  text-decoration:underline;
+}
+
 
 @media (max-width:767px){
   #header-nav .social{
