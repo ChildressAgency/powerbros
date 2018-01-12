@@ -30,9 +30,15 @@
       <div class="content-square">
         <h1>Services</h1>
         <ul>
-          <?php if(have_rows('services')): while(have_rows('services')): the_row(); ?>
-            <li><?php the_sub_field('service'); ?></li>
-          <?php endwhile; endif; ?>
+          <?php
+            $services = get_field('services_links', false, false);
+            if($services){
+              foreach($services as $service){
+                echo '<li><a href="' . get_the_permalink($service) . '">' . get_the_title($service) . '</a></li>';
+              }
+              echo '<li><a href="' . home_url('services') . '">And more!</a></li>';
+            }
+          ?>
         </ul>
         <a href="<?php echo home_url('services'); ?>" class="btn-main">All Services</a>
         <br />

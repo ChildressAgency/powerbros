@@ -97,6 +97,8 @@ function powerbros_styles(){
   wp_enqueue_style('powerbros');
 }
 
+add_theme_support('post-thumbnails');
+
 register_nav_menu( 'header-nav', 'Header Navigation' );
 /**
  * Class Name: wp_bootstrap_navwalker
@@ -337,4 +339,23 @@ function powerbros_load_categories($field){
     }
   }
   return $field;
+}
+
+add_action('init', 'powerbros_create_post_type');
+function powerbros_create_post_type(){
+  $service_labels = array(
+    'name' => 'Services',
+    'singular_name' => 'Service',
+    'menu_name' => 'Services',
+    'add_new_item' => 'Addd New Service',
+    'search_items' => 'Search Services'
+  );
+  $service_args = array(
+    'labels' => $service_labels,
+    'public' => true,
+    'menu_position' => 5,
+    'supports' => array('title', 'author', 'editor', 'revisions', 'thumbnail'),
+    'menu_icon' => 'dashicons-hammer'
+  );
+  register_post_type('services', $service_args);
 }
