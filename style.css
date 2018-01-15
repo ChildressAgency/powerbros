@@ -92,12 +92,13 @@ img.alignright{
 
 #header-nav{
   background-color:#0e1c35;
-  position:relative;
+  position:fixed;
+  width:100%;
   z-index:4;
 }
 #header-nav.homepage{
   background-color:rgba(0,0,0,.5);
-  position:absolute;
+  position:fixed;
   width:100%;
 }
 #header-nav .social{
@@ -837,5 +838,8 @@ footer .social>a+a{
   .navbar-header,
   .menu-container{
     margin-top:50px;
+  }
+  #main{
+    padding-top:120px;
   }
 }
